@@ -1,0 +1,45 @@
+{
+  "name": "baseApiObj",
+  "version": "1.0.0",
+  "description": "可快速搭建规范且稳定的nodejs项目api，特着手此脚手架开发",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./index.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "buildNew": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js"
+  },
+  "keywords": [
+    "koa",
+    "sequlize",
+    "nodejs",
+    "api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^4.0.0",
+    "axios": "^1.5.0",
+    "axios-cookiejar-support": "^4.0.7",
+    "bottleneck": "^2.19.5",
+    "cheerio": "^1.0.0-rc.12",
+    "ddddocr": "^1.0.0",
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.0",
+    "log4js": "^6.9.1",
+    "puppeteer-core": "^21.1.1",
+    "sequelize": "^6.32.1",
+    "tough-cookie": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/node": "^7.22.10",
+    "@babel/preset-env": "^7.22.14",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.22",
+    "webpack-cli": "^5.1.4"
+  }
+}
